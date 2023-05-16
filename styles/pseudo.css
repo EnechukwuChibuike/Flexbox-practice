@@ -1,0 +1,61 @@
+p::first-letter {
+  color: red;
+  font-size: 30px;
+}
+
+a {
+  color: black;
+}
+a:focus {
+  cursor: pointer;
+  color: red;
+  text-decoration: none;
+}
+a:visited {
+  color: aqua;
+}
+
+p::first-line {
+  color: red;
+}
+
+/* h1::before {
+  content: url(../images/city.jpg);
+}
+
+h1::after {
+  content: url(../images/nature.jpg);
+} */
+
+.cross {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.cross::before {
+  content: "";
+  background-color: green;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  margin-left: 45px;
+}
+
+.cross::after {
+  content: "";
+  background-color: green;
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  top: 45px;
+}
+
+li::marker {
+  color: red;
+}
+
+p::selection {
+  color: yellow;
+  background-color: red;
+}
